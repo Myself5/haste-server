@@ -27,7 +27,7 @@ haste_document.prototype.load = function(key, callback, lang) {
       _this.data = res.data;
       try {
         var high;
-        if (lang === 'txt') {
+        if( lang === 'txt' || res.data.length > 10000) {
           high = { value: _this.htmlEscape(res.data) };
         }
         else if (lang) {

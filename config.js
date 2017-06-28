@@ -5,7 +5,7 @@
 
   "keyLength": 10,
 
-  "maxLength": 400000,
+  "maxLength": 100000000,
 
   "staticMaxAge": 86400,
 
@@ -33,6 +33,7 @@
   },
 
   "storage": {
+    "path": "./data",
     "type": "file"
   },
 
